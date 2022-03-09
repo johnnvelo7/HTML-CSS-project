@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Main Layout, same at every page so shared CSS-->
+    <link rel="stylesheet" href="css/mainlayout.css" type="text/css">
+    <!--Other stylesheet for the individual changes at each HTML-->
+    <link rel="stylesheet" href="css/page3.css" type="text/css"/>
+    <title>Playroom</title>
+</head>
+<body>
+    
+    <a href="page1.html">
+        <img id="lego-logo-img" src="./images/lego-logo.png" alt="Lego Logo"/>
+        </a>
+    
+    <nav>
+        <ul class="mainNavigation">
+            <li><a href="page2.html">Homepage</a></li>
+            <li><a href="page3.html">Playroom</a></li>
+            <li><a href="page4.html">Credits</a></li>
+        </ul>
+    </nav>
+
+    <!--/////////////////////////-->
+    <!--JOHN // HIGHWAY GAME-->
+    <!--/////////////////////////-->
+
+    <!--Container for game-->
+    <div class="highwayGameContainer">
+
+        <h1 id="highway-game-txt">Drag the road to make it reach the thief!
+         Hover the police car to drive it!</h1>
+        
+         <!--Main dragbox with image-->
+        <div class="highwayDragBox">
+            <img id="highway-lego" src="images/highway-lego.jpg" alt="highway">
+        </div>
+        
+        <!--Police car and thief image with hoverBox-->
+        <div class="hoverBox"></div>
+        <img id="lego-car-img" src="images/lego-car.png" alt="lego car"/>
+        <img id="running-thief-img" src="./images/Runningthief.png" alt="running thief"/>
+
+    </div>
+
+    <!--/////////////////////////-->
+    <!--CHRISTOFFER // ELEVATOR GAME-->
+    <!--/////////////////////////-->
+
+    <!---elevatorContainer contains every element so that the different games dont mix.-->
+    <div class="elevatorContainer">
+        <!--type radio for checkboxes, named the same so only one can be active,
+            ids used in css with :checked selectors.-->
+        <input type="radio" id="floor-3" name="elevator" class="elevatorBtns"/><label class="labels">Roof</label>
+        <input type="radio" id="floor-2" name="elevator" class="elevatorBtns"/><label class="labels">2nd Floor</label>
+        <input type="radio" id="floor-1" name="elevator" class="elevatorBtns"/><label class="labels">1st Floor</label>
+    <!--.elevator and radio-input has to be in the same container for :checked selector to work-->
+        <div class="elevator">
+            <img id="police-img" src="./images/police-officer.png" alt="lego police officer">
+        </div>
+    <!--The different floors an the thief on top-->
+        <div class="floors">
+            <img id="thief-img" src="./images/Runningthief.png" width="180px"/>
+            <img id="open-window-img" src="images/window-open.png" width="200px"/>
+            <img id="open-window-img" src="images/window-open.png" width="200px"/>
+        </div>
+
+        <h1>Push the elevator buttons to help the police officer catch the thief!</h1>
+    </div>
+
+    <!--/////////////////////////-->
+    <!--JOHN // BOUNCY GAME-->
+    <!--/////////////////////////-->
+
+    <!--Container for game-->
+    <div class="bouncyGameContainer">
+        <h1 id="bouncy-game-h1">CATCH THE THIEF!</h1>
+        <!--Main div for animation-->
+        <div class="bouncyThief">
+            <img id="lego-head-game" src="images/lego-head.gif" alt="lego head">
+            <img id="thief-hat-game" src="images/theif-hat.png" alt="thief hat">
+        </div>
+    </div>  
+    
+
+</body>
+</html>

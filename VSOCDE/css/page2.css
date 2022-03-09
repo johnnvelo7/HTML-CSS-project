@@ -1,0 +1,26 @@
+ /*ROSHAAN AND MAROAN // ALL ELEMENTS STYLED*/
+
+ .textBox{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.textBox h1{
+    font-size: 50px;
+}
+.textBox h3{
+    font-size: 30px;
+}
+
+#thief-gif{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    border: 10px solid black;
+    padding: 0;
+}
+.textBox audio{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}

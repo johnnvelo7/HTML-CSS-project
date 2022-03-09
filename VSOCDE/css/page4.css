@@ -1,0 +1,265 @@
+/*///////////////////////////////*/
+/*ROSHAAN // ROLL CREDITS*/
+/*///////////////////////////////*/
+
+/*Styling for credits container*/
+.creditsContainer{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    height: 600px;
+    width: 700px;
+    border: 5px solid rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+
+/*The rolling text*/
+.credits-roll-txt{
+    color: rgb(255, 208, 0);
+    font-family: sans-serif;
+    font-size: larger;
+    line-height: 1.5;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    animation: rollCredits 22s infinite linear;
+    text-align: center;
+}
+.credits-roll-txt h1, h2{
+    text-align: center;
+}
+
+/*Animtion is infinite and starts at bottom of 
+    screen and ends up over top of screen*/
+@keyframes rollCredits {
+    from {top: 100%;}
+    to{top: -100%;} 
+}
+
+/*///////////////////////////////*/
+/*CHRISTOFFER // 3D LEGO BRICK*/
+/*///////////////////////////////*/
+
+/*Styling for legobrick, preserve-3d for 3d view */
+ .legoBrickContainer {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    /*background-color: rgba(0, 47, 255, 0.438);*/
+    top:20%;
+    left: 57%;
+    animation: spin 20s infinite linear;
+  }
+  
+  /*Style of all child div in container/sides of brick*/
+  .legoBrickContainer > div {
+     position: absolute;
+     transform: translate(-50%,-50%);
+     top: 30%;
+     left: 20%;
+     width: 300px;
+     height: 210px;
+     line-height: 100px;
+     border: 2px solid black;
+     background: rgb(204, 2, 2);
+     background-image: url(../images/lego-logo-brick.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+  }
+  
+  /*A brick is 360 degrees so every side has a rotation of 90deg(4sides)*/
+  /*front and back side is exeption*/
+  /*margin of 150px because height of brick is 300px*/
+  /*preserve-3d for stud on the top div*/
+
+  .legoBrickContainer #top {
+    transform: rotateX(90deg); 
+    margin-top: -150px;
+    height: 300px;
+    background-image: none;
+    transform-style: preserve-3d;
+  }
+  
+  .legoBrickContainer #right {
+     transform: rotateY(90deg); 
+    margin-left: 150px;
+  }
+  
+  .legoBrickContainer #bottom {
+     transform: rotateX(-90deg); 
+    margin-top: 60px;
+    height: 300px;
+    background-image: none;
+  }
+  
+  .legoBrickContainer #left {
+     transform: rotateY(-90deg); 
+    margin-left: -150px;
+  }
+  
+  .legoBrickContainer #front {
+     transform: translateZ(150px);
+  }
+  
+  .legoBrickContainer #back {
+     transform: translateZ(-150px) rotateX(180deg) scale(-1);
+    }
+  
+/*Animation infinite spin an da rotation of 20deg for better 3d view*/
+  @keyframes spin {
+    0% {transform: rotateX(-20deg) rotateY(20deg);}
+    100% {transform: rotateX(-20deg) rotateY(740deg);}
+  }
+  
+ /*//////////////////////*/
+  /*STUDS*/
+  /*//////////////////////*/
+ 
+ 
+  
+  .legoStud {
+     transform-style: preserve-3d;
+     position: relative;
+     transform: rotateX(270deg) translateY(-47px) scale3d(0.4, 0.4, 0.4);  
+ }
+ .legoStud div{
+     position: absolute;
+     float: left;
+     height: 100px;
+     width: 35px;
+     background-color: rgb(204, 2, 2);
+     border: 2px solid black;
+ }
+ #top-panel{
+     width: 265px;
+     height: 265px;
+     transform: rotateX(90deg) translate(7%,0%);
+     border: 2px solid black;
+     border-radius: 100%;
+     margin: -135px;
+     background-color: rgb(204, 2, 2);
+     background-image: url(../images/lego-logotxt.png);
+     background-size: 260px;
+     background-repeat: no-repeat;
+     background-position:40%;
+ }
+ #bottom-panel{
+     width: 265px;
+     height: 265px;
+     transform: rotateX(90deg) translate(-32%,0%);
+     border: 2px solid black;
+     border-radius: 100%;
+     margin:-30px;
+     background-color: rgb(204, 2, 2);
+     background-image: none;
+ }
+ #panel-1{
+     transform: rotateY(0deg) translateZ(133px);
+ }
+ #panel-2{
+     transform: rotateY(15deg) translateZ(133px);
+ }
+ #panel-3{
+     transform: rotateY(30deg) translateZ(133px);
+ }
+ #panel-4{
+     transform: rotateY(45deg) translateZ(133px);
+ }
+ #panel-5{
+     transform: rotateY(60deg) translateZ(133px);
+ }
+ #panel-6{
+     transform: rotateY(75deg) translateZ(133px);
+ }
+ #panel-7{
+     transform: rotateY(90deg) translateZ(133px);
+ }
+ #panel-8{
+     transform: rotateY(105deg) translateZ(133px);
+ }
+ #panel-9{
+     transform: rotateY(120deg) translateZ(133px);
+ }
+ #panel-10{
+     transform: rotateY(135deg) translateZ(133px);
+ }
+ #panel-11{
+     transform: rotateY(150deg) translateZ(133px);
+ }
+ #panel-12{
+     transform: rotateY(165deg) translateZ(133px);
+ }
+ #panel-13{
+     transform: rotateY(180deg) translateZ(133px);
+ }
+ #panel-14{
+     transform: rotateY(195deg) translateZ(133px);
+ }
+ #panel-15{
+     transform: rotateY(210deg) translateZ(133px);
+ }
+ #panel-16{
+     transform: rotateY(225deg) translateZ(133px);
+ }
+ #panel-17{
+     transform: rotateY(240deg) translateZ(133px);
+ }
+ #panel-18{
+     transform: rotateY(255deg) translateZ(133px);
+ }
+ #panel-19{
+     transform: rotateY(270deg) translateZ(133px);
+ }
+ #panel-20{
+     transform: rotateY(285deg) translateZ(133px);
+ }
+ #panel-21{
+     transform: rotateY(300deg) translateZ(133px);
+ }
+ #panel-22{
+     transform: rotateY(315deg) translateZ(133px);
+ }
+ #panel-23{
+     transform: rotateY(330deg) translateZ(133px);
+ }
+ #panel-24{
+     transform: rotateY(345deg) translateZ(133px);
+ }
+ #stud-1{
+     position: absolute ;
+     top: 25%;
+     left: 22%;
+ }
+ #stud-2{
+     position: absolute;
+     top: 75%;
+     left: 22%;
+ }
+ #stud-3{
+     position: absolute;
+     top: 25%;
+     left: 75%;
+ }
+ #stud-4{
+     position: absolute;
+     top: 75%;
+     left: 75%;
+ }
+ .legoBrickContainer:hover div{
+     background-color: rgba(204, 2, 2, 0.5);
+     background-image: url(../images/legologotrans.png);
+ }
+
+h3{
+    position: absolute;
+    top: 80%;
+    left: 68%;
+    font-family: sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(204, 2, 2);
+}
+ 
+ 
